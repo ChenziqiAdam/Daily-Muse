@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     return {
+      base: '/Daily-Muse/',
       server: {
         port: 3000,
         host: '0.0.0.0',
