@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import html2canvas from 'html2canvas';
 import { Card } from './components/Card';
 import { Controls } from './components/Controls';
+import { ApiKeyInput } from './components/ApiKeyInput'; // Added import
 import { QuoteData, UserPreferences, DEFAULT_PREFERENCES, GenerateStatus } from './types';
 import { generateQuoteContent, generateCardImage, updateApiKey } from './services/gemini';
 import { getDailyCard, saveDailyCard, getTodayString, getApiKey, saveApiKey } from './utils/storage';
@@ -131,6 +132,13 @@ const App: React.FC = () => {
         </p>
       </header>
 
+      {/* API Key Input Component */}
+      <ApiKeyInput 
+        apiKey={apiKey} 
+        onApiKeyChange={handleApiKeyChange} 
+        isZh={preferences.language === 'zh'} 
+      />
+
       {/* Main Container - Adjusted to stretch items for equal height */}
       <div className="flex flex-col lg:flex-row lg:items-stretch justify-center gap-8 lg:gap-16 w-full max-w-6xl">
         
@@ -190,8 +198,6 @@ const App: React.FC = () => {
                     onGenerate={() => handleGenerate(false)}
                     disabled={status.startsWith('generating')}
                     errorMsg={errorMsg}
-                    apiKey={apiKey}
-                    onApiKeyChange={handleApiKeyChange}
                 />
             </div>
         </div>

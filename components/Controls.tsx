@@ -5,8 +5,6 @@ interface ControlsProps {
   preferences: UserPreferences;
   onUpdate: (newPrefs: UserPreferences) => void;
   onGenerate: () => void;
-  onApiKeyChange: (apiKey: string) => void;
-  apiKey: string;
   disabled?: boolean;
   errorMsg?: string | null;
 }
@@ -96,27 +94,7 @@ export const Controls: React.FC<ControlsProps> = ({ preferences, onUpdate, onGen
         </button>
       </div>
 
-      {/* API Key Input */}
-      <div className="flex-none space-y-2 pt-6">
-        <label className="text-xs text-stone-400 font-bold uppercase tracking-widest block text-center">
-          {isZh ? "Gemini API 密钥" : "Gemini API Key"}
-        </label>
-        <div className="flex gap-2">
-          <input
-            type="password"
-            value={localApiKey}
-            onChange={(e) => setLocalApiKey(e.target.value)}
-            className="flex-1 p-2 text-sm border border-stone-200"
-            placeholder={isZh ? "在此输入您的 API 密钥" : "Enter your API key here"}
-          />
-          <button
-            onClick={handleSaveApiKey}
-            className="py-2 px-4 text-xs font-medium bg-stone-700 text-white hover:bg-stone-600"
-          >
-            {isZh ? "保存" : "Save"}
-          </button>
-        </div>
-      </div>
+
 
       {/* Middle: Controls Grouped (Flex-1 to take available space) */}
       <div className="flex-1 flex flex-col justify-center space-y-6 py-8">
