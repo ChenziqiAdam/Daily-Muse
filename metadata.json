@@ -1,0 +1,5 @@
+{
+  "name": "Daily Muse",
+  "description": "Daily Muse is an AI-powered sanctuary that transforms your daily mood into personalized cards. It harnesses Google Gemini to curate profound quotes from literature and philosophy, visualizing the healing power of beautiful words.",
+  "requestFramePermissions": []
+}
