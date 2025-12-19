@@ -23,7 +23,9 @@ Built with a focus on quiet luxury and a minimalist aesthetic, Daily Muse provid
 
 Catch a glimpse of Daily Muse in action! Watch our short video demonstration to see how effortlessly you can generate unique art and literature.
 
-[![Daily Muse Demo Video](https://img.youtube.com/vi/ckmrTm1IlPo/0.jpg)](https://www.youtube.com/watch?v=ckmrTm1IlPo/)
+[![Demo Video](https://img.youtube.com/vi/ckmrTm1IlPo/0.jpg)](https://www.youtube.com/watch?v=ckmrTm1IlPo/)
+
+![Demo Picture](./public/daily-muse-2025-12-16.png)
 
 ---
 
@@ -54,7 +56,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repo**
     ```sh
-    git clone <your-repository-url>
+    git clone https://github.com/ChenziqiAdam/Daily-Muse.git
     cd daily-muse
     ```
 2.  **Install NPM packages**
