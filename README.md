@@ -5,9 +5,7 @@
         <br />
         An AI-powered sanctuary for generating unique art and literature from your daily context.
         <br />
-        <a href="#">Report Bug</a>
-        ·
-        <a href="#">Request Feature</a>
+        <a href="https://chenziqiadam.github.io/Daily-Muse/">Start Creating</a>
     </p>
 </div>
 
@@ -25,7 +23,7 @@ Catch a glimpse of Daily Muse in action! Watch our short video demonstration to 
 
 [![Demo Video](https://img.youtube.com/vi/ckmrTm1IlPo/0.jpg)](https://www.youtube.com/watch?v=ckmrTm1IlPo/)
 
-![Demo Picture](./public/assets/daily-muse-2025-12-16.png)
+![Demo Picture](./public/assets/daily-muse-2025-12-16.png|400)
 
 ---
 
